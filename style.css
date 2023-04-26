@@ -1,0 +1,165 @@
+body{
+    box-sizing: border-box;
+    background-color: #544f4d;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    transition: opacity 3.5s ease-in-out;
+}
+.bg img{
+width: 43%;
+border-radius: 12px;
+/* opacity: 77%; */
+/* z-index: 999; */
+transition: opacity 0.7s ease-in-out;
+width: 42%;
+    height: 95vh;
+}
+.btn{
+position: absolute;
+bottom: 100px;
+outline: none;
+border: none;
+background: #ad7f96;
+border-radius: 3px;
+background: #6c6468;
+border-radius: 3px;
+color: #b5b4ab;
+opacity: 70%;
+font-family: monospace;
+box-sizing: border-box;
+font-size: 22px;
+transition: background 0.8s ease-in-out;
+transition: border 0.8s ease-in-out;
+transition: color 0.8s ease-in-out;
+z-index: 90809099090;
+}
+.btn:hover{
+border: 1px solid wheat;
+/* opacity: 90%; */
+color: red;
+background: #838082;
+}
+.fontStyleGigi{
+font-family: gigi;
+top: 0;
+position: absolute;
+}
+.headNotebook{
+position: absolute;
+top: 60px;
+color: #a75f5f;
+transition: opacity 0.8s ease-in-out;
+opacity: 50%;
+z-index: 998297183939279;
+}
+.headNotebook:hover{
+color: #955151;
+opacity: 90%;
+z-index: 99990;
+}
+.contentBox{
+display: flex;
+flex-direction: column;
+background: #686464;
+width: 33%;
+justify-content:center ;
+align-items: center;
+margin: 0 auto;
+text-align: center;
+transition: opacity 0.7s ease-in-out;
+position: absolute;
+/* height: 500px; */
+}
+#txt{
+width: 80%;
+border-radius: 8px;
+/* border-radius: 6px; */
+background: #6e6d6d;
+top: 64px;
+position: absolute;
+
+}
+#Abtn{
+width: 70px;
+margin: 30px 0 0 0 ;
+background: #625e5e;
+color: rgb(167, 164, 164);
+transition: background 0.8s ease-in-out;
+border-radius: 3px;
+font-weight: bold;
+transition: color 0.8s ease-in-out;
+position: absolute;
+top: 74px;
+}
+#addPara{
+align-self: flex-start;
+margin: 0 12 0 12px;
+width: -webkit-fill-available;
+border: 1px solid grey;
+border-radius: 3px;
+padding: 0 7px;  
+min-width: 100px;
+overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.append{
+    overflow-y: scroll;
+    border: 1px solid #524646;
+    height: 300px;
+    padding: 24px;
+    margin-top: 120px;
+    width: 70%;
+
+}
+#Abtn:hover{
+background: #111328;
+color: white;
+}
+#innerHeart{
+color: red;
+}
+.innerHeading2{
+    top: 1px;
+    color: red;
+    z-index: 0;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+.innerHeading{
+    z-index: 1;
+}
+/* USED FOR TOGGLE FROM JS */
+.backgroundToggle{
+opacity: 0;
+}
+.hideBg{
+opacity: 0;
+
+}
+@media(max-width:1142px){
+    .contentBox{
+        width: 80%;
+    }
+    .append{
+        width: 70%;
+    }
+}
+@media(max-width:850px){
+    .bg img {
+        width: 84%;
+        height: 98vh;
+    }
+}
+@media(max-width:424px){
+    .bg img {
+        width: 99%;
+        height: 98vh;
+    }
+}
