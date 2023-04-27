@@ -23,6 +23,8 @@ console.log(addNoteParaBtn.value)
 let count = 1;
 
 addNoteBtn.addEventListener('click', function () {
+
+    if(addNoteParaBtn.value ==null){
     // 👇👇APPEND NOTES WHEN USER CLICK ON ADD NOTE 👇👇
     let appendedPara = document.createElement('p')
                                   // THIS LINE WILL ADD S.NO AND USER'S NOTE 
@@ -35,5 +37,9 @@ addNoteBtn.addEventListener('click', function () {
     headingRedPopUp()
     // 👇👇 INCREMENT S.NO COUNT  👇👇
     count++;
-
+}
+// If user tries to click on 'add note' without writing any note 
+else{
+    alert("Oops, Seems you have not wrote down the note.")
+}
 })
